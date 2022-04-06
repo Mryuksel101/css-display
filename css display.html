@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>display özelliği</title>
+</head>
+<body>
+   <!--  
+        Display özelliği, düzeni kontrol etmek için en önemli CSS özelliğidir.
+        Her HTML elementinin, ne tür bir öğe olduğuna bağlı olarak varsayılan bir display (görüntüleme) değeri vardır.
+        Çoğu öğe için varsayılan display (görüntüleme) değeri "block" veya "inline" olabilir.
+
+    -->
+   
+   <!--    
+       Adım 1: kodların hepsini ctrl+a yaparak kopyala editöründe çalıştır.
+       Adım 2: dosyayı html uzantısı olarak kayıt et.
+       Adım 3: Web sayfasında ctrl+shift+c yaparak ve çıkan şeyi görerek derste işleyeceğimiz konuya daha  hakim olabilirsin.
+    -->
+
+
+    <!--
+       ----- Block-level Elementler ------
+        Blok level (düzeyinde) bir öğe her zaman yeni bir satırda başlar ve 
+        mevcut tüm genişliği kaplar (mümkün olduğunca sola ve sağa doğru uzanır).
+        Block - level element örnekleri: <div> , <h1> - <h6> , <p>  , <form> , <header> , <footer> , <section>
+    -->
+
+    <p style="border: 2px solid black;">Block level element ornegi bir</p>
+    <div style="border: 2px solid black;">Block level element ornegi iki</div>
+
+    <!-- 
+        Web sayfasındayken ctrl+shift+c yaptığında ve daha sonra fareyi yazının
+        üzerine götürdüğünde göreceksin ki p ve div elementleri tam bir satır yer kapsıyor,
+        tüm genişliği kullanoyor ve her biri yeni satırda başlıyor.
+        Buna Block-level Element denir
+    -->
+
+
+
+    <!-- 
+        ------ Inline Elementler --------
+        Inline element yeni bir satırda başlamaz ve yalnızca gerektiği kadar genişlikte yer kaplar.
+        Inline element örnekleri; <span> , <a> , <img>
+    -->
+    <p style="border: 2px solid black;">Block level bir elementin içinde <span style="border: 2px solid blue;"> span element </span>kullanımı</p>
+    <!--
+        Yine ctrl+shift+c yaptığında göreceksin ki yeni bir satırda başlamadı 
+        ve yalnızca gerektiği kadar genişlikte yer kapladı.
+        Bu tür elementelere Inline-level element denir. 
+    -->
+
+    <!-- 
+        ------- Element’in gösterim özelliğini değiştirme --------
+        Her elementin varsayılan bir görüntüleme değeri vardır. Ancak bunu değiştirebilirsiniz.
+        Block-level bir element’e “display: inline;” yazarsak o element artık inline bir element gibi çalışır.
+
+        Inial-level bir element’e “display: block;” yazarsak o element artık block bir element gibi çalışır.
+    -->
+
+    <p style="border: 2px solid black; display: inline;">Bu normalde block bir element ama şimdi ona inial özellik ekleyeceğim </p>
+    <span style="border: 2px solid black; display: block;"> Bu normalde inial bir element ama şimdi ona block özellik ekleyeceğim </span>
+    <!-- 
+        Web sayfasındayken ctrl+shift+c yaparak sayfayı incele
+    -->
+
+
+
+
+    <!-- 
+        visibility: hidden;
+        dersek,  sayfada etiket gözükmez ama sanki sayfada etiket varmış gibi yer kaplar
+    -->
+
+    <p style="border: 2px solid black; visibility: hidden;">visibility: hidden; ne işe yarar</p>
+
+    <p>Şimdi gerçketen yer kapladı mı sayfada bak </p>
+
+
+    <!-- 
+        display: none;
+        dersek, p etiketimiz sayfada gözükmez ve herhangi bir yer kaplamaz. 
+    -->
+    <p style="border:2px solid black; display: none;">Display:none ne yapar</p>
+
+    <p>Koddaki yorum satırlarını incele ve tarayıcıda <strong>Ctrl+shift+c yap, incele sayfayı</strong></p>
+    
+
+</body>
+</html>

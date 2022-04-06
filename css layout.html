@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout nedir</title>
+    <style>
+        span.a
+        {
+            display: inline; /* aslinda inline diğerek belirtmemize gerek yok. Zaten span'ın varsayılan gösterimi inline'dır  */
+            width: 100px; 
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;  
+            background-color: yellow; 
+        }
+
+        span.b
+        {
+            display: inline-block; 
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;  
+            background-color: yellow; 
+        }
+
+        span.c
+        {
+            display: block; 
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;  
+            background-color: yellow; 
+        }
+
+        span.d
+        {
+            display: flex; 
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;  
+            background-color: yellow; 
+        }
+
+        span.i
+        {
+            display: inline-flex; 
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            border: 1px solid blue;  
+            background-color: yellow; 
+        }
+
+        
+    </style>
+</head>
+<body>
+  
+
+    <!-- 
+        Alıştırmaları kendiniz de deneyin. Kodları bilgisayarınıza kayıt edip hmtl sayfası oluşturun.
+        daha sonra tarayıcıda ctrl+shif+c yapın. Daha iyi öğreneceksiniz konuyu
+    -->
+
+    
+
+    <h2>display: inline</h2>
+    <div>
+        inline, genişlik yükseklik gibi değerler almaz <span class="a">inline</span> <span class="a">inlineeeeeeeeeeeee</span> Yazının içeriği kadar genişler. 
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div>
+        inline-block, display:block gibi tam bir satır yer kaplamaz <span class="b">inline</span> <span class="b">inlineeeeeeeeeeeee</span> Görüldüğü üzere, yazının içeriği kadar genişlemez. Verilen değer (width,height) kadar genişler.
+    </div>
+
+    <h2>display: block</h2>
+    <div>
+        Tam bir satır yer kaplar. <span class="c">block</span> <span class="c">blockkkkkkkkkkkkkkkkkkkkkkkkkk</span> Diğer elementlerin yanına yerleşemez. Görüldüğü üzere, yazının içeriği kadar genişlemez. Verilen değer (width,height) kadar genişler.
+    </div>
+
+
+    <h2>display: flex</h2>
+
+    <div>
+        Bir tam satır yer kaplar. <span class="d">flexxxxxxxxxxxxx</span> <span class="d">flex</span>Görüldüğü üzere, yazının içeriği kadar genişlemez. Verilen değer (width,height) kadar genişler. 
+    </div>
+
+
+    <p>Flexler'i tam bir satırı kullanan içi boş kutu gibi düşünebiliriz. Aşağıdaki çizgili sınır halinde olan şey flex kutusudur. İçine değerler alır.</p>
+
+    <div style="display: flex; border: 2px solid black;">
+        <span style="background-color: red;">Şu an flex'in içindeyim.</span>
+        <span style="background-color: yellow;">Ben de içindeyim</span>
+
+    </div>
+
+
+    <h2>display: inline-flex</h2>
+    <div>
+        Normal flex gibi bir satır yer kaplamaz. <span class="i">flexxxxxxxxxxxxx</span> <span class="i">flex</span>Görüldüğü üzere, yazının içeriği kadar genişlemez. Verilen değer (width,height) kadar genişler. 
+    </div>
+    
+    <p>Yine içi boş kutu gibidir. İçinde değer alır. Normal flex'ten tek farkı tüm bir satırı işgal etmez.</p>
+    <p>Aşağıdaki çizgili sınır halinde olan şeyler flex kutularıdır.</p>
+
+    <div style="display: inline-flex; border: 2px solid black;">
+        <span style="background-color: red;">Şu an flex'in içindeyim.</span>
+        <span style="background-color: yellow;">Ben de içindeyim</span>
+
+    </div>
+
+    <div style="display: inline-flex; border: 2px solid black;">
+        <span style="background-color: red;">Şu an flex'in içindeyim.</span>
+        <span style="background-color: yellow;">Ben de içindeyim</span>
+
+    </div>
+
+    <div style="display: inline-flex; border: 2px solid black;">
+        <span style="background-color: red;">Şu an flex'in içindeyim.</span>
+        <span style="background-color: yellow;">Ben de içindeyim</span>
+
+    </div>
+
+    <p><strong>Ctrl+shift+c yap, incele sayfayı</strong></p>
+
+
+
+</body>
+</html>
